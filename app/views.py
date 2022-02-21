@@ -47,7 +47,7 @@ def contact():
                                 email=email,
                                 subject=subject)
         flash_errors(myform)
-        redirect('/')
+        return redirect('/')
     return render_template('contact.html', form= myform)
 ###
 # The functions below should be applicable to all Flask apps.

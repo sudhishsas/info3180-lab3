@@ -3,7 +3,7 @@
 {% block main %}
 <h1>Contact</h1>
 <form action="{{ url_for('contact') }}" method="POST">
-    {% include 'flash_messages.html' %}
+    
     {{ form.csrf_token }}
     
 
